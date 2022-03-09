@@ -245,6 +245,8 @@ grid-column: 2/3;
 }
 
 
+
+
 }
 @media screen and (max-width: 1500px){
  #userbar{
@@ -252,3 +254,18 @@ grid-column: 2/3;
 
     }}
 
+@media screen and (min-width: 680px){
+.filn-principal{
+    display: block;
+    top: 100px;
+}}
+@media screen and (min-width: 1000px){
+.filn-principal{
+    display: block;
+    top: 170px;
+}}
+
+@media screen and (min-width: 1650px){
+.filn-principal{
+  position: absolute;
+  top: 400px;}}
