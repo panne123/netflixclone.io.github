@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- <script  src="./style.js"></script> -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/732/732228.png">
+       
+        <title>NETFLIX</title>
+
+    </head>
+
+    <body>
+
+    <header>  
+    <div class="container">
+        <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5977/5977590.png" alt="Netflix Logo" style="width:100px;height:100px;margin-left:10px;">
+        
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Series</a>
+        <a href="#">Films</a>
+        <a href="#">Documanteries</a>            
+        </nav>
+       <div id="search">
+        <input type="text" placeholder ="Search"name="search">
+        <i class="fa fa-search" aria-hidden="true"></i> 
+        <div id="userbar">  
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>  
+    </div>
+      
+    </div>
+    </header>
+    <div class="image">
+      <img src="./titanic12.jpg" style="width:100%;">   
+        
+    </div>
+
+
+
+    <main>
+    <div class="filn-principal">
+
+    <h2>Titanic</h2>
+    <p>The story of the 1912 sinking of the largest luxury liner ever built, <br>The tragedy that befell over two thousand of the rich and famous as <br>Well as of the poor and unknown passengers.
+    <br>
+    <br>
+    Creation: James cameron.
+    </p>
+    <br>
+    <div class="button">
+        <a href="https://www.youtube.com/results?search_query=titanic+movies" target="blank"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+        <a href=""><i class="fa fa-plus" aria-hidden="true"></i> My Playlist</a>
+        
+    </div>
+
+    </div>
+
+
+
+
+    </main>
+
+ <main>
+        <section class="thumbSection">
+            <h2 class="thumbTitle">Popular Now</h2>
+            <div class="thumbTiles swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a class="thumbTile" href="https://www.bing.com/videos/search?q=titanic+movie+trailer&view=detail&mid=218E0055EC7F7B4B4B36218E0055EC7F7B4B4B36&FORM=VIRE0&ru=%2fsearch%3fq%3dtitanic%2bmovie%2btrailer%26qs%3dSS%26pq%3dtitanic%2bmovie%26sk%3dLS1SS2%26sc%3d6-13%26cvid%3dC776384F2A894A96A775F116D33FC834%26FORM%3dQBRE%26sp%3d4" target="blank">
+                            <img class="thumbTile__image"
+                                src="https://images.wallpapersden.com/image/download/original-avatar-movie-poster_bGdoaWaUmZqaraWkpJRmbmdlrWZlbWU.jpg"
+                                alt="The Queen's Gambit">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="thumbTile" href="#">
+                            <img class="thumbTile__image"
+                                src="https://sm.mashable.com/t/mashable_pk/photo/default/harry-potter-streaming-guide_9tdq.1248.jpg"
+                                alt="Dark">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="thumbTile" href="#">
+                            <img class="thumbTile__image"
+                                src="https://wallpapersflix.com/wp-content/uploads/2020/06/Avengers-Endgame-Desktop-Background.jpg"
+                                alt="Suits">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="thumbTile" href="#">
+                            <img class="thumbTile__image"
+                                src="https://www.hdwallpapers.in/download/x_men_dark_phoenix_4k-HD.jpg"
+                                alt="Breaking Bad">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="thumbTile" href="#">
+                            <img class="thumbTile__image"
+                                src="https://allhdwallpapers.com/wp-content/uploads/2015/04/titanic-5.jpg"
+                                alt="The Crown">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            spaceBetween: 5,
+            slidesPerView: 2,
+            loop: true,
+            freeMode: true,
+            loopAdditionalSlides: 5,
+            speed: 500,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                    freeMode: false
+                }
+            }
+        })
+    </script>
+</body>
+
+
+</html>
